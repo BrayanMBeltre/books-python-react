@@ -2,11 +2,17 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.formatting.provider": "none",
   "python.linting.pylintEnabled": false,
   "python.linting.enabled": false,
   "python.linting.pylamaEnabled": false,
   "python.linting.flake8Enabled": false,
   "python.analysis.typeCheckingMode": "basic",
-  "python.linting.mypyEnabled": true
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "75",
+    "--experimental-string-processing"
+  ],
+  "python.linting.flake8Args": ["--max-line-length=120"]
 }
