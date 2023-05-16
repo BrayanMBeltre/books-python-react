@@ -1,18 +1,18 @@
 from backend.models.book import Book
+from playhouse.shortcuts import model_to_dict
 
 
-async def all_books_handlers(request):
+def all_books_handlers(request):
     if request.command == "GET":
-        books = await Book.all().values()
-        response = {"message": books}
-        return response
+        books = Book.select().dicts()
+        return list(books)
     else:
         return {"error": "Invalid request method."}
 
 
 def single_book_handler(request, book_id):
     if request.command == "GET":
-        response = {"book_id": book_id}
-        return response
+        book = Book.get(Book.id == book_id)
+        return model_to_dict(book)
     else:
-        return {"error": "Invalid request method."}
+        return {"data": "Invalid request method."}

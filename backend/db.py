@@ -1,11 +1,11 @@
-from tortoise import Tortoise
+# import http.server
+from peewee import SqliteDatabase
 
+from playhouse.migrate import SqliteMigrator
 
-async def database():
-    # Here we create a SQLite DB using file "db.sqlite3"
-    #  also specify the app name of "models"
-    #  which contain models from "app.models"
-    await Tortoise.init(
-        db_url="sqlite://db.sqlite3",
-        modules={"models": ["backend.models.book"]},
-    )
+# Configure the database connection
+db = SqliteDatabase("database.db")
+migrator = SqliteMigrator(db)
+
+# Create the database tables
+# db.create_tables([BaseModel, Book, Page])

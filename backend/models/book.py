@@ -1,11 +1,8 @@
-from tortoise.models import Model
-from tortoise import fields
+from peewee import CharField, PrimaryKeyField
+from backend.models.base import BaseModel
 
 
-class Book(Model):
-    id = fields.IntField(pk=True)
-    title = fields.CharField(max_length=255)
-    author = fields.CharField(max_length=255)
-
-    def __str__(self):
-        return self.title
+class Book(BaseModel):
+    id = PrimaryKeyField()
+    title = CharField()
+    author = CharField()

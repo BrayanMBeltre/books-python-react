@@ -1,8 +1,10 @@
-from peewee import SqliteDatabase, Model
+from peewee import Model, PrimaryKeyField
 
-db = SqliteDatabase("library.db")
+from backend import db
 
 
 class BaseModel(Model):
+    id = PrimaryKeyField()
+
     class Meta:
-        database = db
+        database = db.db

@@ -1,12 +1,11 @@
-from tortoise.models import Model
-from tortoise import fields
+from backend.models.base import BaseModel
+from peewee import ForeignKeyField, IntegerField, TextField
+
+from backend.models.book import Book
 
 
-class Page(Model):
-    book = fields.ForeignKeyField("models.Book", related_name="pages")
-    page_number = fields.IntField(max_length=255)
-    text = fields.TextField()
-    html = fields.TextField()
-
-    def __str__(self):
-        return self.book + self.page_number
+class Page(BaseModel):
+    book = ForeignKeyField(Book, backref="pages")
+    number = IntegerField()
+    txt = TextField()
+    html = TextField()

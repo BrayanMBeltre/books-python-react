@@ -1,52 +1,44 @@
-from backend.db import database
+from faker import Faker
+
 from backend.models.book import Book
 from backend.models.page import Page
 
 
-async def seed_database():
-    # Create books
-    book1 = await Book.create(title="Book 1", author="Author 1")
-    book2 = await Book.create(title="Book 2", author="Author 2")
+fake = Faker()
 
-    # Create pages for book1
-    await Page.create(
-        book=book1,
-        page_number=1,
-        text="Page 1 of Book 1",
-        html="<p>Page 1 of Book 1</p>",
-    )
-    await Page.create(
-        book=book1,
-        page_number=2,
-        text="Page 2 of Book 1",
-        html="<p>Page 2 of Book 1</p>",
-    )
-    await Page.create(
-        book=book1,
-        page_number=3,
-        text="Page 3 of Book 1",
-        html="<p>Page 3 of Book 1</p>",
-    )
+NUM_BOOKS = 10
+NUM_PAGES_PER_BOOK = 10
 
-    # Create pages for book2
-    await Page.create(
-        book=book2,
-        page_number=1,
-        text="Page 1 of Book 2",
-        html="<p>Page 1 of Book 2</p>",
-    )
-    await Page.create(
-        book=book2,
-        page_number=2,
-        text="Page 2 of Book 2",
-        html="<p>Page 2 of Book 2</p>",
-    )
-    await Page.create(
-        book=book2,
-        page_number=3,
-        text="Page 3 of Book 2",
-        html="<p>Page 3 of Book 2</p>",
-    )
 
-    # Close database connection
-    await database.close()
+# define an HTML template
+template = """
+<p>{title}</p>
+"""
+
+
+def seed_data(num_books, pages_per_book):
+    # Create multiple books
+    books_data = []
+    for _ in range(num_books):  # Change the number as per your requirement
+        book_data = {"title": fake.sentence(), "author": fake.name()}
+        books_data.append(book_data)
+
+    for book_data in books_data:
+        book = Book.create(**book_data)
+
+        # Create pages for each book
+        pages_data = []
+        for page_number in range(1, pages_per_book):
+            page_data = {
+                "book": book,
+                "number": page_number,
+                "txt": fake.paragraph(),
+                "html": f"<p>{fake.paragraphs()}</p>",
+            }
+            pages_data.append(page_data)
+
+        for page_data in pages_data:
+            Page.create(**page_data)
+
+
+seed_data(NUM_BOOKS, NUM_PAGES_PER_BOOK)
