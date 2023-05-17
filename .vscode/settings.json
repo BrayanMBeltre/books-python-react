@@ -14,5 +14,6 @@
     "75",
     "--experimental-string-processing"
   ],
-  "python.linting.flake8Args": ["--max-line-length=120"]
+  "python.linting.flake8Args": ["--max-line-length=120"],
+  "conventionalCommits.scopes": ["front-end"]
 }

@@ -16,7 +16,7 @@ def book_pages_handlers(request, book_id: str, content_format=None):
         content_field = getattr(Page, content_format)
 
         pages = (
-            Page.select(Page.id, content_field)
+            Page.select(Page.id, Page.book, Page.number, content_field)
             .where(Page.book == book_id)
             .dicts()
         )
