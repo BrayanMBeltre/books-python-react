@@ -10,16 +10,10 @@ NUM_BOOKS = 10
 NUM_PAGES_PER_BOOK = 10
 
 
-# define an HTML template
-template = """
-<p>{title}</p>
-"""
-
-
 def seed_data(num_books, pages_per_book):
     # Create multiple books
     books_data = []
-    for _ in range(num_books):  # Change the number as per your requirement
+    for _ in range(num_books):
         book_data = {"title": fake.sentence(), "author": fake.name()}
         books_data.append(book_data)
 

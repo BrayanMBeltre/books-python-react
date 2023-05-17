@@ -1,8 +1,7 @@
-from peewee import CharField, PrimaryKeyField
+from peewee import CharField
 from backend.models.base import BaseModel
 
 
 class Book(BaseModel):
-    id = PrimaryKeyField()
     title = CharField()
     author = CharField()

@@ -15,7 +15,6 @@ from backend.api.handlers.pages import (
 routes = {
     "/api/books/([0-9]+)/pages/([0-9]+)(?:/([A-Za-z]+))?": single_book_page_handler,
     "/api/books/([0-9]+)/pages(?:/([A-Za-z]+))?": book_pages_handlers,
-    # "/api/books/([0-9]+)/pages": book_pages_handlers,
     "/api/books/([0-9]+)": single_book_handler,
     "/api/books": all_books_handlers,
 }
