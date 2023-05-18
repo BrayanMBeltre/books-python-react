@@ -15,5 +15,5 @@
     "--experimental-string-processing"
   ],
   "python.linting.flake8Args": ["--max-line-length=120"],
-  "conventionalCommits.scopes": ["front-end", "global"]
+  "conventionalCommits.scopes": ["front-end", "global", "backend"]
 }

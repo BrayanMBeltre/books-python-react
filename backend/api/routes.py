@@ -1,6 +1,4 @@
-from http.server import (
-    BaseHTTPRequestHandler,
-)
+from http.server import BaseHTTPRequestHandler
 import json
 import re
 from backend.api.handlers.books import (
@@ -24,27 +22,28 @@ routes = {
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        for (
-            path,
-            handler,
-        ) in routes.items():
+        for path, handler in routes.items():
             match = re.match(path, self.path)
             if match:
                 response = handler(self, *match.groups())
                 self.send_response(200)
+                self.send_header("Content-type", "application/json")
                 self.send_header(
-                    "Content-type",
-                    "application/json",
-                )
+                    "Access-Control-Allow-Origin", "*"
+                )  # Allow requests from any origin
+                self.send_header(
+                    "Access-Control-Allow-Methods", "GET"
+                )  # Allow only GET requests
+                self.send_header(
+                    "Access-Control-Allow-Headers", "Content-type"
+                )  # Allow only Content-type header
                 self.end_headers()
                 self.wfile.write(json.dumps(response).encode())
                 break
         else:
             self.send_response(404)
-            self.send_header(
-                "Content-type",
-                "application/json",
-            )
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             response = {"error": "Route not found"}
             self.wfile.write(json.dumps(response).encode())
