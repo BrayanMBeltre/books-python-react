@@ -7,6 +7,7 @@ type TBase = {
 export type TBook = TBase & {
   title: string;
   author: string;
+  total_pages: number;
 };
 
 export type TPage = TBase & {

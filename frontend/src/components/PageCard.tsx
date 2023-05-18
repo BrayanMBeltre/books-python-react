@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 type Props = TPage;
 
-export const PageCard = ({ id, book, number, txt }: Props) => {
+export const PageCard = ({ book, number, txt }: Props) => {
   return (
-    <Link to={`/book/${book}/page/${id}`}>
+    <Link to={`/book/${book}/page/${number}`}>
       <div className="rounded-xl bg-primary  p-4 h-[200px] flex flex-col justify-between ">
         <h4 className="font-semibold text-lg line-clamp-4 ">{txt}</h4>
 
@@ -13,6 +13,10 @@ export const PageCard = ({ id, book, number, txt }: Props) => {
       </div>
     </Link>
   );
+};
+
+export const PageCardSkeleton = () => {
+  return <div className="rounded-xl bg-neutral h-[200px] animate-pulse" />;
 };
 
 export default PageCard;

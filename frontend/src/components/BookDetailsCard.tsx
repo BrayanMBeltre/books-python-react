@@ -11,4 +11,8 @@ const BookDetailsCard = ({ author, title }: Props) => {
   );
 };
 
+export const BookDetailsCardSkeleton = () => {
+  return <div className="rounded-xl bg-neutral min-h-[200px] animate-pulse" />;
+};
+
 export default BookDetailsCard;

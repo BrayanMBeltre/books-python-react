@@ -41,7 +41,7 @@ def single_book_page_handler(
         try:
             page = (
                 Page.select(Page.id, Page.number, Page.book, content_field)
-                .where(Page.book == book_id, Page.id == page_id)
+                .where(Page.book == book_id, Page.number == page_id)
                 .get()
             )
 
