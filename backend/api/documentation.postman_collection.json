@@ -1,0 +1,365 @@
+{
+  "info": {
+    "_postman_id": "0381c323-901e-488b-9422-920c8e56de15",
+    "name": "Coco REST API Library",
+    "description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these request types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT and PATCH requests.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a variable called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Tests\" tab**\n\nTests help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/b5f280a7-4b09-48ec-857f-0a7ed99d7ef8/U2NyZWVuc2hvdCAyMDIzLTAzLTI3IGF0IDkuNDcuMjggUE0ucG5n\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n- Add more scripts in \"Tests\" to verify if the API works as expected and execute flows.\n    \n\n## ℹ️ Resources\n\n[Building requests](https://learning.postman.com/docs/sending-requests/requests/)  \n[Authorizing requests](https://learning.postman.com/docs/sending-requests/authorization/)  \n[Using variables](https://learning.postman.com/docs/sending-requests/variables/)  \n[Managing environments](https://learning.postman.com/docs/sending-requests/managing-environments/)  \n[Writing scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17578285",
+    "_collection_link": "https://www.postman.com/bold-trinity-264757/workspace/public/collection/17578285-0381c323-901e-488b-9422-920c8e56de15?action=share&creator=17578285&source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Postman Documentation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}",
+          "host": ["{{base_url}}"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}",
+              "host": ["{{base_url}}"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:57:21 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"info\": {\n        \"_postman_id\": \"0381c323-901e-488b-9422-920c8e56de15\",\n        \"name\": \"Coco REST API Library\",\n        \"description\": \"# 🚀 Get started here\\n\\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\\n\\n## 🔖 **How to use this template**\\n\\n#### **Step 1: Send requests**\\n\\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\\n\\nThis collection contains each of these request types. Open each request and click \\\"Send\\\" to see what happens.\\n\\n#### **Step 2: View responses**\\n\\nObserve the response tab for status code (200 OK), response time, and size.\\n\\n#### **Step 3: Send new Body data**\\n\\nUpdate or add new data in \\\"Body\\\" in the POST request. Typically, Body data is also used in PUT and PATCH requests.\\n\\n```\\n{\\n    \\\"name\\\": \\\"Add your name in the body\\\"\\n}\\n\\n```\\n\\n#### **Step 4: Update the variable**\\n\\nVariables enable you to store and reuse values in Postman. We have created a variable called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\\n\\n#### **Step 5: Add tests in the \\\"Tests\\\" tab**\\n\\nTests help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \\\"Test Results\\\" tab.\\n\\n<img src=\\\"https://content.pstmn.io/b5f280a7-4b09-48ec-857f-0a7ed99d7ef8/U2NyZWVuc2hvdCAyMDIzLTAzLTI3IGF0IDkuNDcuMjggUE0ucG5n\\\">\\n\\n## 💪 Pro tips\\n\\n- Use folders to group related requests and organize the collection.\\n- Add more scripts in \\\"Tests\\\" to verify if the API works as expected and execute flows.\\n    \\n\\n## ℹ️ Resources\\n\\n[Building requests](https://learning.postman.com/docs/sending-requests/requests/)  \\n[Authorizing requests](https://learning.postman.com/docs/sending-requests/authorization/)  \\n[Using variables](https://learning.postman.com/docs/sending-requests/variables/)  \\n[Managing environments](https://learning.postman.com/docs/sending-requests/managing-environments/)  \\n[Writing scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\",\n        \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\",\n        \"_exporter_id\": \"17578285\",\n        \"_collection_link\": \"https://www.postman.com/bold-trinity-264757/workspace/public/collection/17578285-0381c323-901e-488b-9422-920c8e56de15?action=share&creator=17578285&source=collection_link\"\n    },\n    \"item\": [\n        {\n            \"name\": \"Get Postman Documentation\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ]\n                }\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get All Books\",\n            \"event\": [\n                {\n                    \"listen\": \"test\",\n                    \"script\": {\n                        \"exec\": [\n                            \"pm.test(\\\"Status code is 200\\\", function () {\",\n                            \"    pm.response.to.have.status(200);\",\n                            \"});\"\n                        ],\n                        \"type\": \"text/javascript\"\n                    }\n                }\n            ],\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\"\n                    ]\n                },\n                \"description\": \"This is a GET request and it is used to \\\"get\\\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\\n\\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.\"\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get One Boook\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books/1\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\",\n                        \"1\"\n                    ]\n                }\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get All Pages From a Book\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books/1/pages\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\",\n                        \"1\",\n                        \"pages\"\n                    ]\n                }\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get All Pages from a Book In a Specific Format\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books/1/pages/html\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\",\n                        \"1\",\n                        \"pages\",\n                        \"html\"\n                    ]\n                }\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get One Page From a Book\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books/1/pages/1\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\",\n                        \"1\",\n                        \"pages\",\n                        \"1\"\n                    ]\n                }\n            },\n            \"response\": []\n        },\n        {\n            \"name\": \"Get One Page From a Book in a specific Page\",\n            \"request\": {\n                \"method\": \"GET\",\n                \"header\": [],\n                \"url\": {\n                    \"raw\": \"{{base_url}}/books/1/pages/1/html\",\n                    \"host\": [\n                        \"{{base_url}}\"\n                    ],\n                    \"path\": [\n                        \"books\",\n                        \"1\",\n                        \"pages\",\n                        \"1\",\n                        \"html\"\n                    ]\n                }\n            },\n            \"response\": []\n        }\n    ],\n    \"event\": [\n        {\n            \"listen\": \"prerequest\",\n            \"script\": {\n                \"type\": \"text/javascript\",\n                \"exec\": [\n                    \"\"\n                ]\n            }\n        },\n        {\n            \"listen\": \"test\",\n            \"script\": {\n                \"type\": \"text/javascript\",\n                \"exec\": [\n                    \"\"\n                ]\n            }\n        }\n    ],\n    \"variable\": [\n        {\n            \"key\": \"id\",\n            \"value\": \"1\"\n        },\n        {\n            \"key\": \"base_url\",\n            \"value\": \"http://localhost:8000/api\"\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All Books",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books",
+          "host": ["{{base_url}}"],
+          "path": ["books"]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": [
+        {
+          "name": "Get All Books",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books",
+              "host": ["{{base_url}}"],
+              "path": ["books"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:33:44 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Which score hold Mr wonder.\",\n        \"author\": \"Jennifer Fox\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Born better future between wind listen.\",\n        \"author\": \"Isaiah Lindsey\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Despite let safe our.\",\n        \"author\": \"Elizabeth Gaines\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Weight positive than bed time country clearly.\",\n        \"author\": \"Mr. Christian Woodard\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Receive information meeting material.\",\n        \"author\": \"Ryan Webb\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Democrat everyone its successful hotel fear.\",\n        \"author\": \"Elizabeth West\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Wall purpose agreement technology leader American someone upon.\",\n        \"author\": \"Douglas Jenkins\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Hair fast believe.\",\n        \"author\": \"Sarah Dennis\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Face improve each build mouth.\",\n        \"author\": \"James Butler\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Condition method relationship five.\",\n        \"author\": \"Lisa Austin\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Middle myself include card step claim.\",\n        \"author\": \"Carol Cummings\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Organization response article son brother.\",\n        \"author\": \"Thomas Mcdonald\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 13,\n        \"title\": \"Health concern girl actually.\",\n        \"author\": \"Jacob Juarez\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 14,\n        \"title\": \"Central report ago important concern.\",\n        \"author\": \"William Myers\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 15,\n        \"title\": \"Stage smile scene food study study successful.\",\n        \"author\": \"Timothy Stevens\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 16,\n        \"title\": \"Difficult probably they bar skill present.\",\n        \"author\": \"Teresa Anderson\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 17,\n        \"title\": \"Year want east officer wish behind.\",\n        \"author\": \"Heather Munoz DDS\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 18,\n        \"title\": \"Mind goal agent.\",\n        \"author\": \"Sharon Dalton\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 19,\n        \"title\": \"Television green owner total.\",\n        \"author\": \"Mary Salas\",\n        \"total_pages\": 9\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Trade investment ago carry structure election poor.\",\n        \"author\": \"Becky Watkins\",\n        \"total_pages\": 9\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get One Boook",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books/1",
+          "host": ["{{base_url}}"],
+          "path": ["books", "1"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books/1",
+              "host": ["{{base_url}}"],
+              "path": ["books", "1"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:35:59 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"Which score hold Mr wonder.\",\n    \"author\": \"Jennifer Fox\",\n    \"total_pages\": 9\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All Pages From a Book",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books/1/pages",
+          "host": ["{{base_url}}"],
+          "path": ["books", "1", "pages"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books/1/pages",
+              "host": ["{{base_url}}"],
+              "path": ["books", "1", "pages"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:37:43 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"book\": 1,\n        \"number\": 1,\n        \"txt\": \"Most stay modern rise there lose reflect natural. Inside go agreement reason give avoid. Win five choice into treat. Wait career media memory tax development win.\"\n    },\n    {\n        \"id\": 2,\n        \"book\": 1,\n        \"number\": 2,\n        \"txt\": \"Great without school ground election now surface. Else art religious official beat radio list. Student central meet.\"\n    },\n    {\n        \"id\": 3,\n        \"book\": 1,\n        \"number\": 3,\n        \"txt\": \"Describe hit drive religious establish strong. Support test state simply close.\"\n    },\n    {\n        \"id\": 4,\n        \"book\": 1,\n        \"number\": 4,\n        \"txt\": \"Consumer style spring. Sea large dream management lose your clear community. Already glass care yard box democratic little. Red everybody travel major various question line.\"\n    },\n    {\n        \"id\": 5,\n        \"book\": 1,\n        \"number\": 5,\n        \"txt\": \"Best list possible soldier new left discussion interesting. Partner focus green manage fight instead. Nor long high seem. Then space buy nearly put now choose.\"\n    },\n    {\n        \"id\": 6,\n        \"book\": 1,\n        \"number\": 6,\n        \"txt\": \"No star prevent money animal. Total call allow exist information mother.\"\n    },\n    {\n        \"id\": 7,\n        \"book\": 1,\n        \"number\": 7,\n        \"txt\": \"Pay great ball. Week skin administration around degree black ask far. Guess head decade management serve east table.\"\n    },\n    {\n        \"id\": 8,\n        \"book\": 1,\n        \"number\": 8,\n        \"txt\": \"Night record reveal board top pull. Street west manager tax mention newspaper you tend.\"\n    },\n    {\n        \"id\": 9,\n        \"book\": 1,\n        \"number\": 9,\n        \"txt\": \"How consider receive today prepare paper source. Hour million candidate brother major their.\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get All Pages from a Book In a Specific Format",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books/1/pages/html",
+          "host": ["{{base_url}}"],
+          "path": ["books", "1", "pages", "html"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books/1/pages/html",
+              "host": ["{{base_url}}"],
+              "path": ["books", "1", "pages", "html"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:38:56 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"book\": 1,\n        \"number\": 1,\n        \"html\": \"<p>['Something key their born use light. House article leave necessary child director executive job.', 'Finally result level manager always choice build. Wait page carry subject. Choose writer or program there serve.', 'The three word television none end. Stand walk answer however official direction reality thousand.']</p>\"\n    },\n    {\n        \"id\": 2,\n        \"book\": 1,\n        \"number\": 2,\n        \"html\": \"<p>['Evening science particular central interest. Boy visit give.', 'When employee certainly not continue.', 'Soon word answer something. Product our country now similar moment. Follow party beyond from. More boy front all.']</p>\"\n    },\n    {\n        \"id\": 3,\n        \"book\": 1,\n        \"number\": 3,\n        \"html\": \"<p>['Thought ready evening question chance light decision where. Blood kitchen someone situation keep civil door. Issue rich majority Mrs old. Four mission season remain make wish.', 'Certainly successful hear bit apply smile worry.', 'Protect interesting leg seek Mr. Draw fire partner none consumer state according.']</p>\"\n    },\n    {\n        \"id\": 4,\n        \"book\": 1,\n        \"number\": 4,\n        \"html\": \"<p>['Success heart may and. No new himself. Government deep society much product remember we.', 'Town establish cultural lot TV usually make. Want situation conference grow somebody scene election. Vote morning effort around fall amount hotel. Window poor happen system less including.', 'For future could understand student half job. Easy that any within.']</p>\"\n    },\n    {\n        \"id\": 5,\n        \"book\": 1,\n        \"number\": 5,\n        \"html\": \"<p>['Claim feel move study could world somebody. Hit bit method explain far.', 'Thank memory eight. Change oil kitchen majority detail.', 'Of court into allow tree.']</p>\"\n    },\n    {\n        \"id\": 6,\n        \"book\": 1,\n        \"number\": 6,\n        \"html\": \"<p>['Rise window from indicate training. Method question spring. General police right take happen.', 'Strong next allow require them reduce. More view produce practice hospital lay head listen. Begin participant situation later.', 'Drug five compare want standard. Level too ever amount three.']</p>\"\n    },\n    {\n        \"id\": 7,\n        \"book\": 1,\n        \"number\": 7,\n        \"html\": \"<p>['Economic hundred probably service class. Tend phone none. Case set side cut magazine ask concern.', 'Dinner head establish allow admit draw country. Around role consumer eye dream become machine. Sport box shake.', 'See owner ability manage again sense. Whom computer laugh candidate.']</p>\"\n    },\n    {\n        \"id\": 8,\n        \"book\": 1,\n        \"number\": 8,\n        \"html\": \"<p>['Continue oil key outside clearly statement. Forget spend health. Wind bed take address.', 'Phone trial challenge play director. Performance defense good do network pressure pattern.', 'Whether center walk. Prove goal international view find true. Loss business strong kitchen image just single.']</p>\"\n    },\n    {\n        \"id\": 9,\n        \"book\": 1,\n        \"number\": 9,\n        \"html\": \"<p>['Include buy prove if must. Ever computer in decade thank spring who.', 'Born few special deep. Opportunity example throw item sing.', 'Soldier rate second. Site order performance play along size night.']</p>\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get One Page From a Book",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books/1/pages/1",
+          "host": ["{{base_url}}"],
+          "path": ["books", "1", "pages", "1"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books/1/pages/1",
+              "host": ["{{base_url}}"],
+              "path": ["books", "1", "pages", "1"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:39:28 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"book\": {\n        \"id\": 1,\n        \"title\": \"Which score hold Mr wonder.\",\n        \"author\": \"Jennifer Fox\"\n    },\n    \"number\": 1,\n    \"txt\": \"Most stay modern rise there lose reflect natural. Inside go agreement reason give avoid. Win five choice into treat. Wait career media memory tax development win.\",\n    \"html\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get One Page From a Book in a specific Page",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/books/1/pages/1/html",
+          "host": ["{{base_url}}"],
+          "path": ["books", "1", "pages", "1", "html"]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/books/1/pages/1/html",
+              "host": ["{{base_url}}"],
+              "path": ["books", "1", "pages", "1", "html"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "BaseHTTP/0.6 Python/3.11.3"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2023 19:40:07 GMT"
+            },
+            {
+              "key": "Content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"book\": {\n        \"id\": 1,\n        \"title\": \"Which score hold Mr wonder.\",\n        \"author\": \"Jennifer Fox\"\n    },\n    \"number\": 1,\n    \"txt\": null,\n    \"html\": \"<p>['Something key their born use light. House article leave necessary child director executive job.', 'Finally result level manager always choice build. Wait page carry subject. Choose writer or program there serve.', 'The three word television none end. Stand walk answer however official direction reality thousand.']</p>\"\n}"
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": "1"
+    },
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000/api"
+    }
+  ]
+}

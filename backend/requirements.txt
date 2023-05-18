@@ -1,2 +1,2 @@
-peewee
-marshmallow
+faker==18.7.0
+peewee==3.16.2

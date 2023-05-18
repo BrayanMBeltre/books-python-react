@@ -36,3 +36,4 @@ def seed_data(num_books, pages_per_book):
 
 
 seed_data(NUM_BOOKS, NUM_PAGES_PER_BOOK)
+print("Seeding completed successfully ✅")

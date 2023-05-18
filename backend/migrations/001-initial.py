@@ -5,3 +5,4 @@ from backend.db import migrator
 migrate(
     migrator.add_column("book", "published_year", IntegerField(default=0)),
 )
+print("Migration completed successfully ✅")

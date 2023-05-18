@@ -7,6 +7,7 @@ from backend.api.handlers.books import (
     single_book_handler,
     all_books_handlers,
 )
+from backend.api.handlers.documentation import documentation
 from backend.api.handlers.pages import (
     single_book_page_handler,
     book_pages_handlers,
@@ -17,6 +18,7 @@ routes = {
     "/api/books/([0-9]+)/pages(?:/([A-Za-z]+))?": book_pages_handlers,
     "/api/books/([0-9]+)": single_book_handler,
     "/api/books": all_books_handlers,
+    "/api": documentation,
 }
 
 

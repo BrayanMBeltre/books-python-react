@@ -1,33 +1,45 @@
-# Library API
+# API BIBLIOTECA
 
-GBH just hired you to create an online library. It needs you to build a REST API and an application that will allow our clients to read the list of available books, as well as to read those books' page by page in the desired formats.
+<!-- TODO: new description -->
 
-For this first iteration, the books will be available (page by page) in plain text and HTML. In future iterations, we would like to add support for more reading formats, as well as support to interface with other online book service providers.  
+This is a REST API and a React App which will allow our clients to consume the list of available books, as well as to read those books page by page in the desired formats.
 
-## Technical Requirements 
+## Getting started
 
-- List of books
-- Book detail
-- Read a book's page in the desired format
-- Make use of friendly routes for example: `/book/1` or `/book/1 /page/11/html`, for both API and Application
-- Provide seeders/migrations for the database (books with their pages)
-- Provide instructions on project setup/configuration
+- Clone the app
+- Run `chmod +x run.sh`
+- Run `./run.sh init backend`
+- Run `./run.sh init frontend`
 
-## Rules
-- Use the language mentioned in the email in which you got this test
-- Do not use any frameworks. A good developer must know how to select his tools and how to use them.
-- The use of third-party libraries is allowed and encouraged.
-- Make use of .gitignore, keep it clean. 
+## Command run app
 
-## Evaluation Criteria
+-Run backend: `./run.sh backend`
+-Run frontend: `./run.sh frontend`
 
-1. Technical requirements.
-2. Organization and consistency of the file and folder structure.
-3. Modifiability and extendability of the system where required. 
-4. Commit history (commits are organized and descriptive).
-5. Time used to complete the test.
-6. Complexity of the solution.
-7. Correct usage of SOLID principles.
-8. Correct usage of design patterns. 
+## API Routes availables
 
+- `/api/` - postman documentation
+- `/api/books` - get all books
+- `/api/books/1` - get one book by id
+- `/api/books/1/pages` - all pages from a book
+- `/api/books/1/pages/html` - all pages from a book in a specific content type
+- `/api/books/1/pages/1` - get one page by book
+- `/api/books/1/pages/1/html` - get one page by book in a specific content type
 
+# manually run backend
+
+1: pip install -r backend/requirements.txt
+2: python -m backend.generates  
+3: python -m backend.seed
+4: python -m backend.main
+
+# manually run frontend
+
+1: cd ./frontent
+2: move .env.example to .env
+3: yarn install
+4: yarn dev
+
+# to run migrations
+
+python -m backend.migrations.001-initial
